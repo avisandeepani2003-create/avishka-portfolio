@@ -20,7 +20,7 @@ body {
   
   background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
   color: #fff;
-  padding: 15px;
+  padding: 3px;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -235,6 +235,7 @@ body.dark .card {
   background: #0f172a;
   border: 1px solid #1e40af;
 }
+
 
 
 
