@@ -1,0 +1,239 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f6f8;
+  color: #232324;
+  line-height: 1.6;
+}
+
+/* =========================
+   TOP BAR (MOBILE)
+========================= */
+.topbar {
+  
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+}
+
+.menu-btn {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.title {
+  margin-left: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.theme-btn {
+  margin-left: auto;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #111, #1b1b1b);
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  padding: 25px 20px;
+  text-align: center;
+  transition: 0.35s ease;
+}
+
+.close-btn {
+  display: none;
+  text-align: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.sidebar img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00adb5;
+  margin-bottom: 12px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  color: #ddd;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #00adb5;
+  color: #fff;
+}
+
+.theme-btn.desktop {
+  margin-top: 25px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.main {
+  margin-left: 260px;
+  padding: 50px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  margin-bottom: 60px;
+  animation: fadeUp 0.7s ease;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #00adb5;
+  display: block;
+  margin-top: 6px;
+  border-radius: 4px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+  background: #2870a7;
+  padding: 22px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skill {
+  margin-bottom: 18px;
+}
+
+.skill span {
+  font-weight: 500;
+}
+
+.bar {
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 50%;
+  background: linear-gradient(90deg, #6af4dd, #49dcc4);
+  border-radius: 10px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #7061a6;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 35px rgba(167, 139, 250, 0.45);
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+
+footer {
+  text-align: center;
+  color: #777;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+
+
+body.dark {
+  background: linear-gradient(135deg, #020617, #020d2b, #0a1a44);
+  color: #dcdee6;
+}
+
+body.dark .topbar {
+  background: #020617;
+}
+
+body.dark .nav a {
+  color: #c7d2fe;
+}
+
+body.dark .card {
+  background: #0f172a;
+  border: 1px solid #1e40af;
+}
+
+

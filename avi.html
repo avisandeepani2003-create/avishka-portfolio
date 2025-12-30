@@ -2,21 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Avishka Portfolio</title>
+  <title>Avishka Sandeepani | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="avi.css">
-  <img src="avi.jpeg" alt="My Photo">
 </head>
 <body>
 
-  <header class="top-bar">
-    <h1>Avishka</h1>
-  </header>
+<!-- TOP BAR (MOBILE) -->
+<div class="topbar">
+  <span class="menu-btn" onclick="openMenu()">☰</span>
+  <span class="title">Avishka Sandeepani</span>
+  <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+</div>
 
-  <section class="hero">
-    <h2>Hi, I'm Avishka</h2>
-    <p>Student | Web Developer</p>
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <span class="close-btn" onclick="closeMenu()">✖</span>
+  <img src="images/avi.jpeg" class="profile-img.jpeg" alt="Avishka">
+  <h2>Avishka<br>Sandeepani</h2>
+
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+
+
+<button onclick="toggleDark()">🌙 </button>
+<script src="avi.js"></script>
+</nav>
+<!-- MAIN CONTENT -->
+<div class="main">
+
+  <section id="about">
+    <h1>About Me</h1>
+    <p>
+      Undergraduate student following a BSc (Hons) in Biomedical Technology
+      at Gampaha Wickramarachchi Indigenous University. Strong interest in
+      biomedical technology and healthcare innovation.I have experience working with HTML, CSS, and basic JavaScript to build responsive and visually appealing websites.
+      I enjoy problem-solving and continuously improving my technical skills.
+      My goal is to grow as a developer and contribute to meaningful projects while learning from real-world experience.
+    </p>
   </section>
 
-  <script src="avi.js"></script>
+  <section id="education">
+    <h1>Education</h1>
+
+    <div class="card">
+      <h3>BSc (Hons) in Biomedical Technology</h3>
+      <p>Gampaha Wickramarachchi Indigenous University</p>
+      <span>Second Year Undergraduate</span>
+    </div>
+
+    <div class="card">
+      <h3>GCE A/L – Technology Stream</h3>
+      <p>Mahinda Rajapaksha College, Matara</p>
+      <span>Results: B, C, C</span>
+    </div>
+
+    <div class="card">
+      <h3>Professional Qualifications</h3>
+      <p>Diploma in Information Technology – ICBT</p>
+      <p>Diploma in English – ICBT</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h1>Skills</h1>
+
+    <div class="skill">
+      <span>Management Skills</span>
+      <div class="bar"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>ICT Knowledge</span>
+      <div class="bar"><div style="width:75%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Critical Thinking</span>
+      <div class="bar"><div style="width:70%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Creativity</span>
+      <div class="bar"><div style="width:85%"></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Biomedical Mini Project</h3>
+        <p>Basic biomedical data analysis project.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive portfolio using HTML, CSS & JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>IT Diploma Project</h3>
+        <p>Web-based application developed during diploma.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>📞 +94 74 282 7449</p>
+    <p>📧 avishkasandeepani2003@gmail.com</p>
+    <p>📍 Dankoluwa, Pitabeddara</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Avishka Sandeepani</p>
+  </footer>
+
+</div>
+<script>
+    function toggleDark() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+<script src="avi.js"></script>
 </body>
 </html>
+
